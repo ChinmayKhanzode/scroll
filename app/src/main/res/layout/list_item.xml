@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<com.google.android.material.card.MaterialCardView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginHorizontal="3dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/blue_200"
-    app:cardCornerRadius="15dp"
-    android:layout_margin="8dp">
+    android:backgroundTint="@color/blue_200">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:textAppearance="?attr/textAppearanceHeadline6">
 
         <ImageView
             android:id="@+id/item_image"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="194dp"
             android:importantForAccessibility="no"
             android:scaleType="centerCrop" />
@@ -23,7 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/item_title"
-            android:paddingStart="8dp"
+            android:textAlignment="center"
+
             android:textColor="@color/black"
 
             android:textSize="20sp"
@@ -32,3 +37,5 @@
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
+
+</GridLayout>
